@@ -1,0 +1,13 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Jonathan Murphy",
+      "email": "Tristin83@gmail.com",
+      "phone": "001-904-3992",
+      "city": "Ericland",
+      "country": "Saint Barthelemy",
+      "title": "Global Directives Consultant"
+    }
+  ]
+}
