@@ -1,0 +1,14 @@
+<form (ngSubmit)="onSubmit()">
+
+  <div class="form-group">
+    <label>Nome</label>
+    <input type="text" class="form-control" [(ngModel)]="contato.nome" name="nome" />
+  </div>
+
+  <div class="form-group">
+    <label>Telefone</label>
+    <input type="tel" class="form-control" [(ngModel)]="contato.telefone" name="telefone" />
+  </div>
+
+  <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
