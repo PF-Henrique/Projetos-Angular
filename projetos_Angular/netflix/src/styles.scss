@@ -1,0 +1,16 @@
+body {
+  background-color: #1b1b1b !important;
+  padding-top: 60px;
+  @media (min-width: 992px) {
+    padding-top: 0;
+  }
+}
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}

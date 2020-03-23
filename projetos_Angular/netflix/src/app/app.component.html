@@ -1,0 +1,15 @@
+<app-nav-bar [opened]="menuOpened" (menuToggle)="setMenuState($event)"></app-nav-bar>
+
+<div class="content-fluid">
+
+  <app-full-banner></app-full-banner>
+
+  <app-list-titles title="Adicionado recentemente" [list]="listTitles"></app-list-titles>
+  <app-list-titles title="em alta" [list]="listTitles"></app-list-titles>
+  <app-list-titles title="Continuar assistindo como Pedro Ferreira" [list]="listTitles"></app-list-titles>
+
+</div>
+
+<app-footer></app-footer>
+
+<div class="backdrop" (click)="closeMenu()" *ngIf="menuOpened"></div>
