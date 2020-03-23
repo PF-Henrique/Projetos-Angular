@@ -1,0 +1,15 @@
+Neste tutorial, continuaremos construindo nosso aplicativo de calculadora usando o Angular 8. Aprenderemos particularmente sobre a associação de dados, tanto a associação de eventos quanto a propriedade.
+
+Até agora, nosso modelo é apenas HTML simples, mas o Angular fornece outras construções que podemos usar nos modelos, como a ligação de dados (interpolação, evento e associação de propriedades).
+
+Simplificando, a ligação de dados é um conceito fundamental no Angular que permite que os desenvolvedores façam a comunicação entre um componente e sua visualização ou, mais precisamente, o DOM. Dessa forma, você não precisa enviar manualmente os dados do seu componente para o DOM e voltar.
+
+O Angular fornece quatro tipos de ligação de dados e eles são essencialmente diferentes na maneira como os dados fluem, ou seja, do componente para o DOM, do DOM para o componente ou nos dois sentidos:
+
+Interpolação: Os dados fluem do componente para o DOM - É usado para exibir o valor de uma variável de membro do componente no modelo associado, por exemplo, ``. Usamos chaves para interpolação.
+
+Ligação de propriedade: os dados fluem do componente para uma propriedade de um elemento no DOM. É usado para vincular uma variável de membro do componente a um atributo de um DOM, como o atributo de valor de uma <input>tag (por exemplo :) <input type="text" [value]="foobar">. Usamos colchetes para associação de propriedades.
+
+Ligação de evento: os dados fluem do DOM para o componente. Quando um evento DOM, como um click, é acionado, o método vinculado do componente é chamado. Por exemplo: <button (click)="sayHi()">Hi</button>- O sayHi()método será chamado e precisará ser definido na classe de componente. Usamos parênteses para ligação de eventos.
+
+Ligação de dados bidirecional: os dados fluem nos dois sentidos. Por exemplo: <input type="text" [(ngModel)]="foobar">(A foobarvariável precisa ser definida no componente). O elemento de entrada e foobarterá o mesmo valor e, quando um muda, o outro muda para o mesmo valor de acordo. Usamos a sintaxe banana na caixa, que combina colchetes e parênteses para a ligação de dados bidirecional. ngModelé uma diretiva especial que se liga ao valueatributo dos elementos <input>e <textarea>, mas você pode restringir a ligação de dados bidirecional para qualquer propriedade no DOM ou componente. Associação de dados bidirecional = associação de propriedades + associação de eventos.
