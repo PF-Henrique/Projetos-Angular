@@ -1,0 +1,120 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  background: linear-gradient(-45deg, #141414, #1ae977, #d6df50, #3fb8e4, #156fe6, #e78f53, #0aca9d);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+title {
+  font-family: "Dancing Script", cursive;
+  color: #fff;
+  font-size: 5em;
+  text-shadow: 3px 5px #000;
+}
+
+ul {
+  text-align: left;
+  width: 400px;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  padding-right: 25px;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.123);
+  border-radius: 15px;
+  box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.4);
+}
+
+// ul {
+//   text-align: left;
+//   margin: 10px;
+//   padding: 10px;
+//   list-style: none;
+//   background: rgba(255, 255, 255, 0.123);
+//   border-radius: 15px;
+//   -webkit-box-shadow: 3px 4px 14px 0px rgb(0, 0, 0, 0.4);
+//   -moz-box-shadow: 3px 4px 14px 0px rgb(0, 0, 0, 0.4);
+//   box-shadow: 3px 4px 14px 0px rgb(0, 0, 0, 0.4);
+// }
+
+li {
+  padding: 15px;
+  margin: 10px;
+  font-size: 1rem;
+  font-style: italic;
+  border-bottom: 2px solid rgb(0, 0, 0, 0.2);
+}
+
+li > button {
+  border: none;
+  background-color: #fff;
+  font-size: 1rem;
+  float: right;
+  opacity: 0.6;
+  transition: opacity 1s;
+}
+
+li > button:hover {
+  opacity: 20;
+  transition: opacity 1s;
+}
+
+.button {
+  background-color: #000;
+  border: none;
+  padding: 20px;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 1em;
+  font-weight: 100;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+input {
+  width: 100%;
+  line-height: 50%;
+  text-indent: 10px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+#modal {
+  font-weight: 400;
+  margin: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.123);
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 4px 14px 0px rgb(0, 0, 0, 0.39);
+  -moz-box-shadow: 3px 4px 14px 0px rgb(0, 0, 0, 0.39);
+  box-shadow: 3px 4px 14px 0px rgb(0, 0, 0, 0.39);
+}
+
+#modal > h1 {
+  font-weight: 300;
+}
+
+.danger {
+  color: #ff0000;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
